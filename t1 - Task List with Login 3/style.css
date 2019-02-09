@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+body {
+    /*font-family: Helvetica;*/
+    font-family: 'avenir next', avenir, sans-serif;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+pre {
+    font-family: 'andale mono';
+    word-wrap: break-word;
+}
+#content {
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px gray;
+    padding: 1em;
+    border-radius: 0.7em;
+}
+#content h1 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: lighter;
+}
+#login, #register {
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea {
+    padding: 0.5em;
+    font-size: 0.8em;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    margin-bottom: 0.1em;
+}
+input:focus, textarea:hover {
+    box-shadow: 0 0 5px #01FF70;
+}
+input[type="submit"] {
+    font-size: 1.2em;
+    width: 30%;
+    margin-left: 70%;
+    background: #01FF70;
+    /*margin: auto;*/
+    /*font-weight: bold;*/
+}
+input[type="submit"]:hover {
+    background: #2ECC40;
+}
+input+span {
+    color: #FF4136;
+}
+.registerCall, .loginCall, .callBack {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #0074D9;
+    padding: 0.2em;
+}
+a:hover {
+    background: #0074D9;
+    border-radius: 0.4em;
+    color: white;
+    /*color: #001f3f;*/
+}
+.header {
+    margin-bottom: 0.5em;
+    text-align: right;
+    font-size: 0.8em;
+}
+.header span {
+    font-weight: bolder;
+}
+.topic, #newtopic, .message {
+    border: 1px solid #777;
+    border-radius: 0.5em;
+    background: #DDD;
+    padding: 1.2em;
+    margin: 1em 0;
+}
+.topic h3 {
+    font-size: 1em;
+    margin: 0;
+    display: inline-block;
+}
+.topic .author {
+    /*display: inline-block;*/
+    float: right;
+    text-align: right;
+    color: #777;
+    margin: 0;
+    font-size: 0.8em;
+}
+.message {
+    position: relative;
+}
+.message .author {
+    color: #777;
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+.message .text {
+    font-size: 1em;
+    margin: 0;
+    display: inline-block;
+    text-align: justify;
+    /*width: 70%;*/
+}
+.message .delete {
+    /*display: inline-block;*/
+    float: right;
+    text-align: right;
+    font-size: 0.8em;
+}
+#newtopic input[type="submit"], #newmessage input[type="submit"] {
+    font-size: 0.8em;
+}
+h2.title {
+    text-align: center;
+    font-weight: lighter;
+}

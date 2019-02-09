@@ -1,0 +1,69 @@
+body {
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+tr:nth-child(odd) {
+    background: #DDD;
+}
+
+tr:last-child {
+    background: #333;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+tr:last-child input, tr:last-child select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table th {
+    background: #294;
+    color: white;
+}
+
+th {
+    font-size: 1.2em;
+}
+
+td, th {
+    text-align: center;
+    width: 10em;
+    padding: 5px;
+}
+td.action {
+    width: 5em;
+}
+form {
+    padding-top: 20px;
+}
+td.action a {
+    color: #00F;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+td.todo {
+    font-weight: bold;
+}
+td.done {
+    text-decoration: line-through;
+    font-style: italic;
+}
