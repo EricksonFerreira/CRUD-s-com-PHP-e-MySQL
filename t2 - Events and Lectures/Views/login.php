@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['id']) or isset($_SESSION['user'])):
+	header('location: index.php');
+endif;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +14,7 @@
 <body>
 	<div id="form1">
 		<h1>Login</h1><br>
-		<form method="auth.php" method="POST">
+		<form action="../Controllers/auth.php" method="POST">
 			<label>Usuário:</label>
 			<input type="text" name="user" placeholder="Usuário"><br>
 			<label>Senha:</label>

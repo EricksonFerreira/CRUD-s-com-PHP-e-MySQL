@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['id']) and isset($_SESSION['user'])):
+	header('location: index.php');
+endif;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +14,7 @@
 <body>
 	<div id="form1">
 		<h1>Cadastre-se</h1>
-		<form action="../Controllers/add.php" method="POST">
+		<form action="../Controllers/addUser.php" method="POST">
 			<label>Usuário</label>
 			<input type="text" name="user" placeholder="Usuário"><br>
 			<label>Senha</label>
