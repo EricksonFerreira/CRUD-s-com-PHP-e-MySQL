@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['id']) or isset($_SESSION['username'])):
+	header('location: index.php');
+endif;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
